@@ -58,3 +58,54 @@
   }
 
   
+
+.slim-toggler {
+  width: 22px;
+  height: 18px;
+  position: relative;
+  border: none;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  z-index: 1051;
+}
+
+.slim-toggler .bar {
+  height: 2px;
+  border-radius: 2px;
+  background-color: #604a4a;
+  transition: all 0.3s ease-in-out;
+}
+
+.slim-toggler .top,
+.slim-toggler .bottom {
+  width: 100%;
+}
+
+.slim-toggler .middle {
+  width: 60%;
+  align-self: center;
+}
+
+/* Active (aria-expanded=true) */
+.slim-toggler[aria-expanded="true"] .top {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 11px;
+  width: 100%;
+}
+
+.slim-toggler[aria-expanded="true"] .middle {
+  opacity: 0;
+}
+
+.slim-toggler[aria-expanded="true"] .bottom {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 11px;
+  width: 100%;
+}
+
+  
