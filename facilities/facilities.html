@@ -1,11 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facilities | Ambition Convent School</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo.png">
+  <title>Ambition Convent School</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7f9;
+      color: #333;
+    }
+    
+    section {
+      padding: 30px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      color: #003366;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .facility-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .facility-card h3 {
+      margin-top: 0;
+    }
+
+    .facility-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeInUp 0.7s ease;
+  }
+  .facility-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  </style>
 </head>
 <body>
-    Facilities Page
+
+   <!-- Topbar -->
+<div class="top-bar py-1 text-white">
+  <div class="container d-flex flex-row flex-wrap justify-content-between align-items-center large">
+    <span class="text-center text-md-start mb-1 mb-md-0">
+      <a href="mailto:70211@cbseshiksha.in" class="text-white text-decoration-none me-2">70211@cbseshiksha.in</a>
+    </span>
+    <span>
+      <a href="https://www.facebook.com/ambitionconventschoolujiar/" class="text-white ms-2 social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-white ms-2 social-icon"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-white ms-2 social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="tel:7783973928" class="text-white text-decoration-none ms-2"><i class="fa-solid fa-phone"></i></a>
+    </span>
+  </div>
+</div>
+
+<!-- School Logo and Name -->
+<header class="bg-white shadow-sm sticky-top py-4" id="schoolHeader">
+  <div class="container">
+    <div class="row align-items-center">
+  <!-- Logo, Name, and Hamburger (same row on small screens) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-between mb-2 mb-md-0">
+    <div class="d-flex align-items-center">
+      <img src="/images/logo.png" alt="School Logo" width="60" class="me-2">
+      <div>
+        <h4 class="mb-0 fw-bold">Ambition Convent School</h4>
+        <hr style="margin: 2px 0 3px;">
+        <small class="text-muted">Affiliated to CBSE | Affiliation No.- 2132389</small>
+      </div>
+    </div>
+
+    <!-- Hamburger Button (only visible on small screens) -->
+   <button class="navbar-toggler d-md-none slim-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#schoolNavbar" aria-controls="schoolNavbar" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="bar top"></span>
+  <span class="bar middle"></span>
+  <span class="bar bottom"></span>
+  </button>
+  </div>
+
+  <!-- NavBar -->
+  <div class="col-12 col-md-6">
+    <nav class="navbar navbar-expand-md navbar-light p-0">
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse justify-content-md-end mt-2 mt-md-0" id="schoolNavbar">
+  <ul class="navbar-nav text-start text-md-end w-100 fw-semibold">
+    <li class="nav-item">
+      <a class="nav-link px-3 py-2 d-flex align-items-center gap-2" href="/index.html">
+        Home
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link px-3 py-2 d-flex align-items-center gap-2" href="/about/about.html">
+         About Us
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link px-3 py-2 d-flex align-items-center gap-2" href="facilities.html">
+         Facilities
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link px-3 py-2 d-flex align-items-center gap-2" href="/gallery/gallery.html">
+         Gallery
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link px-3 py-2 d-flex align-items-center gap-2" href="/contact/contact.html">
+        Contact
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link px-3 py-2 d-flex align-items-center gap-2" href="/disclosure/disclosure.html">
+       Mandatory Disclosure
+      </a>
+    </li>
+  </ul>
+</div>
+
+    </nav>
+  </div>
+</div>
+  </div>
+</header>
+
+  <section style="padding: 40px 20px; background-color: #f9fbfd;">
+  <h2 style="text-align: center; color: #003366; font-size: 2.5rem; margin-bottom: 20px;">Our Facilities</h2>
+  <p style="text-align: center; max-width: 800px; margin: auto; font-size: 1.1rem; line-height: 1.6; color: #444;">
+    Ambition Convent School is committed to providing a learning environment that fosters academic growth, creativity, and well-being. Our campus is equipped with facilities that support a 21st-century education experience for every student.
+  </p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px;">
+    <div class="facility-card">
+      <i class="fas fa-chalkboard-teacher fa-2x" style="color: #003366;"></i>
+      <h3>Smart Classrooms</h3>
+      <p>Interactive digital boards and audio-visual aids for modern, effective learning experiences.</p>
+    </div>
+
+    <div class="facility-card">
+      <i class="fas fa-flask fa-2x" style="color: #003366;"></i>
+      <h3>Science Laboratories</h3>
+      <p>Well-equipped Physics, Chemistry, and Biology labs for hands-on experiments and scientific exploration.</p>
+    </div>
+
+    <div class="facility-card">
+      <i class="fas fa-desktop fa-2x" style="color: #003366;"></i>
+      <h3>Computer Lab</h3>
+      <p>Modern computer systems with internet access to enhance IT skills and digital literacy.</p>
+    </div>
+
+    <div class="facility-card">
+      <i class="fas fa-book fa-2x" style="color: #003366;"></i>
+      <h3>Library</h3>
+      <p>A diverse collection of academic books, reference materials, and magazines to support reading and research.</p>
+    </div>
+
+    <div class="facility-card">
+      <i class="fas fa-futbol fa-2x" style="color: #003366;"></i>
+      <h3>Playground & Sports</h3>
+      <p>Spacious playground for outdoor sports, physical education, and recreational activities.</p>
+    </div>
+
+    <div class="facility-card">
+      <i class="fas fa-bus fa-2x" style="color: #003366;"></i>
+      <h3>Safe Transportation</h3>
+      <p>School buses with trained drivers ensuring safe and convenient commuting for students.</p>
+    </div>
+
+    <div class="facility-card">
+      <i class="fas fa-hand-sparkles fa-2x" style="color: #003366;"></i>
+      <h3>Clean & Hygienic Campus</h3>
+      <p>Regular cleaning, sanitized classrooms, and filtered drinking water to ensure student well-being.</p>
+    </div>
+
+    <div class="facility-card">
+      <i class="fas fa-music fa-2x" style="color: #003366;"></i>
+      <h3>Activity Rooms</h3>
+      <p>Special rooms for art, music, dance, and creative exploration to nurture every child's talent.</p>
+    </div>
+  </div>
+</section>
+
+
+  <footer style="background: linear-gradient(to right, #d3d3d3, #595d5e); color: #000; padding: 30px 20px 2px;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto; gap: 15px;">
+    
+    <!-- Quick Links -->
+    <div style="flex: 1; min-width: 200px;">
+      <h3>Quick Links</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#" style="color: inherit; text-decoration: none;">Home</a></li>
+        <li><a href="#" style="color: inherit; text-decoration: none;">About Us</a></li>
+        <li><a href="#" style="color: inherit; text-decoration: none;">Academics</a></li>
+        <li><a href="#" style="color: inherit; text-decoration: none;">Admissions</a></li>
+        <li><a href="#" style="color: inherit; text-decoration: none;">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div style="flex: 1; min-width: 400px;">
+      <h3>Contact</h3>
+      <a href="mailto:info@ambitionschool.edu.in" style="text-decoration: none;color:black;">Email: info@ambitionschool.edu.in</a> <br>
+      <a href="tel:98765 43210" style="text-decoration: none;color:black;">Phone: +91 98765 43210</a>
+      <p>Office Hours: 7:00 AM - 2:00 PM</p>
+      <p><strong>Address:</strong>Ambition Convent School, Ujiar, Ballia<br>
+        Near Buxar-Ballia Road, Uttar Pradesh - 277001</p>
+    </div>
+
+    <!-- Helpful Resources -->
+    <div style="flex: 1; min-width: 200px;">
+      <h3>Helpful</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#" style="color: inherit; text-decoration: none;">Syllabus</a></li>
+        <li><a href="#" style="color: inherit; text-decoration: none;">School Calendar</a></li>
+        <li><a href="#" style="color: inherit; text-decoration: none;">CBSE Circulars</a></li>
+        <li><a href="#" style="color: inherit; text-decoration: none;">Library</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Links -->
+    <div style="flex: 1; min-width: 200px;">
+      <h3>Social</h3>
+      <a href="#" style="margin-right: 10px; color: black; font-size: 24px;"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" style="margin-right: 10px; color: black; font-size: 24px;"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" style="margin-right: 10px; color: black; font-size: 24px;"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" style="color: black; font-size: 24px;"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+  </div>
+
+  <div style="text-align: center; margin-top: 20px; padding-top: 10px; border-top: 1px solid #999;">
+    <p>&copy; 2025 All Rights Reserved by Ambition Convent School, Ujiar. Designed by <a href="tel:7667450881" style="text-decoration: none;color:cyan">Arya Singh</a></p>
+  </div>
+</footer>
+
 </body>
 </html>
