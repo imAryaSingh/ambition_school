@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -56,15 +58,40 @@
     <nav class="navbar navbar-expand-md navbar-light p-0">
       <!-- Nav Links -->
       <div class="collapse navbar-collapse justify-content-md-end mt-2 mt-md-0" id="schoolNavbar">
-        <ul class="navbar-nav text-start text-md-end w-100">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about/about.html">About us</a></li>
-          <li class="nav-item"><a class="nav-link" href="faculty/faculty.html">Faculty</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery/gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact/contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="disclosure/disclosure.html">Mandatory Disclosure</a></li>
-        </ul>
-      </div>
+  <ul class="navbar-nav text-start text-md-end w-100 fw-semibold">
+    <li class="nav-item">
+      <a class="nav-link px-3 py-2 d-flex align-items-center gap-2" href="index.html">
+        Home
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link px-3 py-2 d-flex align-items-center gap-2" href="about/about.html">
+         About Us
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link px-3 py-2 d-flex align-items-center gap-2" href="faculty/faculty.html">
+         Faculty
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link px-3 py-2 d-flex align-items-center gap-2" href="gallery/gallery.html">
+         Gallery
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link px-3 py-2 d-flex align-items-center gap-2" href="contact/contact.html">
+        Contact
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link px-3 py-2 d-flex align-items-center gap-2" href="disclosure/disclosure.html">
+       Mandatory Disclosure
+      </a>
+    </li>
+  </ul>
+</div>
+
     </nav>
   </div>
 </div>
@@ -133,28 +160,46 @@
 
   </div>
 </section>
-
   </main>
-  <section id="notices" class="container my-5">
-  <h2 class="text-center mb-4">Notice & Announcements</h2>
-  
-  <div class="list-group">
-    <a href="notices/notice1.pdf" target="_blank" class="list-group-item list-group-item-action">
-      <strong>Admission Open for Session 2025-26</strong>
-      <br><small>Published on: 15 May 2025</small>
-    </a>
-    <a href="notices/notice2.pdf" target="_blank" class="list-group-item list-group-item-action">
-      <strong>Annual Sports Day Scheduled</strong>
-      <br><small>Published on: 1 May 2025</small>
-    </a>
-    <a href="notices/notice3.pdf" target="_blank" class="list-group-item list-group-item-action">
-      <strong>Covid-19 Safety Guidelines Update</strong>
-      <br><small>Published on: 20 April 2025</small>
-    </a>
+
+
+<section id="notices" class="container my-5">
+  <h2 class="text-center mb-5 fw-bold">📝 Notice & Announcements</h2>
+
+  <div class="row g-4">
+    <!-- Notice 1 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <a href="notices/notice1.pdf" target="_blank" class="text-decoration-none">
+        <div class="notice-card p-4 rounded-4 shadow-sm bg-gradient h-100">
+          <h5 class="fw-semibold mb-2 text-dark">📢 Admission Open for Session 2025–26</h5>
+          <p class="mb-0 text-muted"><i class="bi bi-calendar-event me-2"></i>Published on: 15 May 2025</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Notice 2 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <a href="notices/notice2.pdf" target="_blank" class="text-decoration-none">
+        <div class="notice-card p-4 rounded-4 shadow-sm bg-gradient h-100">
+          <h5 class="fw-semibold mb-2 text-dark">🏆 Annual Sports Day Scheduled</h5>
+          <p class="mb-0 text-muted"><i class="bi bi-calendar-event me-2"></i>Published on: 1 May 2025</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Notice 3 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <a href="notices/notice3.pdf" target="_blank" class="text-decoration-none">
+        <div class="notice-card p-4 rounded-4 shadow-sm bg-gradient h-100">
+          <h5 class="fw-semibold mb-2 text-dark">🛡 Covid-19 Safety Guidelines Update</h5>
+          <p class="mb-0 text-muted"><i class="bi bi-calendar-event me-2"></i>Published on: 20 April 2025</p>
+        </div>
+      </a>
+    </div>
   </div>
 
-  <div class="text-center mt-3">
-    <a href="notices/notices.html" class="btn btn-primary">View All Notices</a>
+  <div class="text-center mt-5">
+    <a href="notices/notices.html" class="btn btn-primary px-4 py-2 rounded-pill">📚 View All Notices</a>
   </div>
 </section>
 
@@ -230,7 +275,7 @@
   </div>
 </section>
 
-  <footer style="background: linear-gradient(to right, #d3d3d3, #777676); color: #000; padding: 30px 20px;">
+  <footer style="background: linear-gradient(to right, #d3d3d3, #595d5e); color: #000; padding: 30px 20px 2px;">
   <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto; gap: 15px;">
     
     <!-- Quick Links -->
@@ -277,8 +322,8 @@
 
   </div>
 
-  <div style="text-align: center; margin-top: 20px; padding-top: 20px; border-top: 1px solid #999;">
-    <p>&copy; 2025 All Rights Reserved by Ambition Convent School, Ujiar. Designed by <a href="tel:7667450881" style="text-decoration: none;">Arya Singh</a></p>
+  <div style="text-align: center; margin-top: 20px; padding-top: 10px; border-top: 1px solid #999;">
+    <p>&copy; 2025 All Rights Reserved by Ambition Convent School, Ujiar. Designed by <a href="tel:7667450881" style="text-decoration: none;color:cyan">Arya Singh</a></p>
   </div>
 </footer>
 

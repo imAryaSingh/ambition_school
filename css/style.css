@@ -1,6 +1,14 @@
-/* Add your custom styles here */
+body {
+  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+body::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari */
+}
+
 .top-bar {
-      background: linear-gradient(to right, #6c757d, #343a40);
+      background: linear-gradient(to right, #8195a6, #454c53);
       transition: background 0.5s ease-in-out;
     }
 
@@ -108,4 +116,29 @@
   width: 100%;
 }
 
-  
+
+
+
+.notice-card {
+  background: linear-gradient(to top left, #ffffff, #f9f9ff);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notice-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+
+
+.navbar-nav .nav-link {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #f0f4ff;
+  color: #0d6efd;
+}
