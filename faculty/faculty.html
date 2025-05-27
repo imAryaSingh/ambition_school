@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Faculty - Ambition Convent School</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .faculty-card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    .faculty-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .faculty-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-primary text-white text-center p-4">
+    <h1>Our Faculty</h1>
+    <p>Meet our experienced and dedicated teaching staff</p>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">ACS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../about/about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="../admission/admission.html">Admission</a></li>
+          <li class="nav-item"><a class="nav-link" href="../gallery/gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="../contact/contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="faculty.html">Faculty</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <h2 class="text-center mb-4">Our Dedicated Faculty Members</h2>
+    <div class="row g-4">
+
+      <!-- Example Faculty Member -->
+      <div class="col-md-4">
+        <div class="faculty-card text-center">
+          <img src="../images/faculty1.jpg" alt="Principal" class="faculty-img mb-3">
+          <h5>Mr. A. Kumar</h5>
+          <p>Principal<br>M.A., B.Ed.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="faculty-card text-center">
+          <img src="../images/faculty2.jpg" alt="Science Teacher" class="faculty-img mb-3">
+          <h5>Ms. Priya Sharma</h5>
+          <p>Science Teacher<br>M.Sc., B.Ed.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="faculty-card text-center">
+          <img src="../images/faculty3.jpg" alt="Math Teacher" class="faculty-img mb-3">
+          <h5>Mr. R. Singh</h5>
+          <p>Mathematics Teacher<br>M.Sc., B.Ed.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="faculty-card text-center">
+          <img src="../images/faculty4.jpg" alt="English Teacher" class="faculty-img mb-3">
+          <h5>Ms. Anjali Verma</h5>
+          <p>English Teacher<br>M.A., B.Ed.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="faculty-card text-center">
+          <img src="../images/faculty5.jpg" alt="Computer Teacher" class="faculty-img mb-3">
+          <h5>Mr. Arya Singh</h5>
+          <p>Computer Science Teacher<br>MCA, O-Level</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="bg-primary text-white text-center p-3 mt-4">
+    <p>&copy; 2025 Ambition Convent School. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
