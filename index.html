@@ -12,6 +12,67 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
+  <style>
+   
+.button1 {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--clr);
+  color: #fff;
+  border-radius: 10rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
+}
+
+.button__icon-wrapper1 {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: var(--clr);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.button1:hover {
+  background-color: #000;
+}
+
+.button1:hover .button__icon-wrapper {
+  color: #000;
+}
+
+.button__icon-svg--copy1 {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button1:hover .button__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button1:hover .button__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
+  </style>
 </head>
 <body>
   <!-- Topbar -->
@@ -198,7 +259,37 @@
   </div>
 
   <div class="text-center mt-5">
-    <a href="notices/notices.html" class="btn btn-primary px-4 py-2 rounded-pill">📚 View All Notices</a>
+    <!-- From Uiverse.io by Creatlydev --> 
+<button href="/notices/notices.html" class="button1" style="--clr: #7808d0">
+  <span class="button__icon-wrapper1">
+    <svg
+      viewBox="0 0 14 15"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="button__icon-svg1"
+      width="10"
+    >
+      <path
+        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+        fill="currentColor"
+      ></path>
+    </svg>
+
+    <svg
+      viewBox="0 0 14 15"
+      fill="none"
+      width="10"
+      xmlns="http://www.w3.org/2000/svg"
+      class="button__icon-svg button__icon-svg--copy1"
+    >
+      <path
+        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+        fill="currentColor"
+      ></path>
+    </svg>
+  </span>
+  <a href="notices/notices.html" style="color: #fff;text-decoration: none;"> View All Notices </a>
+</button>
   </div>
 </section>
 
