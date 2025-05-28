@@ -166,18 +166,22 @@
     <div class="col-md-6">
       <div class="p-4 contact-card">
         <h3 class="mb-4">✉️ Send Us a Message</h3>
-        <form>
+        <form action="handle_form.php" method="POST">
           <div class="mb-3">
             <label for="name" class="form-label">Your Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Phone Number</label>
+            <input type="tel" name="phone" pattern="[0-9]{10}" title="10-digit number" class="form-control" id="phone" placeholder="Enter your phone number" required>
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Your Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">Your Message</label>
-            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here"></textarea>
+            <textarea class="form-control" name="message" id="message" rows="4" placeholder="Write your message here" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary w-100">Send Message</button>
         </form>
