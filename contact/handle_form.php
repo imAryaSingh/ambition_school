@@ -48,7 +48,7 @@ if (!$stmt->execute()) {
 $stmt->close();
 
 // SEND EMAIL
-$to = "70211@cbseshiksha.in";
+$to = "dauntingarya@gmail.com";
 $subject = "📩 New Contact Message from $name";
 $body = "You received a new message:\n\n"
       . "Name: $name\n"
