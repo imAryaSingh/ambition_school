@@ -1,9 +1,9 @@
 <?php
 // DATABASE CONNECTION
 $host = "localhost";
-$db_user = "your_db_username";
-$db_pass = "your_db_password";
-$db_name = "your_db_name";
+$db_user = "root";
+$db_pass = "";
+$db_name = "contact_db";
 
 // Create connection
 $conn = new mysqli($host, $db_user, $db_pass, $db_name);
@@ -48,7 +48,7 @@ if (!$stmt->execute()) {
 $stmt->close();
 
 // SEND EMAIL
-$to = "your_email@example.com";  // 🔁 Change to your own email
+$to = "70211@cbseshiksha.in";
 $subject = "📩 New Contact Message from $name";
 $body = "You received a new message:\n\n"
       . "Name: $name\n"
