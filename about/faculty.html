@@ -73,32 +73,40 @@
       <div class="collapse navbar-collapse justify-content-md-end mt-2 mt-md-0" id="schoolNavbar">
   <ul class="navbar-nav text-start text-md-end w-100 fw-semibold">
     <li class="nav-item">
-      <a class="nav-link px-3 py-2 d-flex align-items-center gap-2" href="/index.html">
+      <a class="nav-link d-flex align-items-center gap-2" href="/index.html">
         Home
       </a>
     </li>
+    <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="about/about.html" class="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    About Us
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+    <li><a class="dropdown-item" href="/about/about.html">Overview</a></li>
+    <li><a class="dropdown-item" href="/about/about.html#vision">Vision & Mission</a></li>
+    <li><a class="dropdown-item" href="/about/faculty.html">Our Team</a></li>
+    <li><a class="dropdown-item" href="/about/facilities.html">Facilities</a></li>
+    <li><a class="dropdown-item" href="/about/gallery.html">Gallery</a></li>
+  </ul>
+</li>
+
     <li class="nav-item">
-      <a class="nav-link px-3 py-2 d-flex align-items-center gap-2" href="/about/about.html">
-         About Us
+      <a class="nav-link d-flex align-items-center gap-2" href="/academics/academics.html">
+        Academics
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link px-3 py-2 d-flex align-items-center gap-2" href="/facility/facility.html">
-        Facilities
+      <a class="nav-link d-flex align-items-center gap-2" href="/admission/admission.html">
+        Admissions
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link px-3 py-2 d-flex align-items-center gap-2" href="/gallery/gallery.html">
-         Gallery
+      <a class="nav-link d-flex align-items-center gap-2" href="/contact/contact.html">
+        Contact Us
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link px-3 py-2 d-flex align-items-center gap-2" href="/contact/contact.html">
-        Contact
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link px-3 py-2 d-flex align-items-center gap-2" href="/disclosure/disclosure.html">
+      <a class="nav-link d-flex align-items-center gap-2" href="/disclosure/disclosure.html">
        Mandatory Disclosure
       </a>
     </li>
@@ -111,53 +119,45 @@
   </div>
 </header>
 
-  <main class="container my-5">
-    <h2 class="text-center mb-4">Our Dedicated Faculty Members</h2>
-    <div class="row g-4">
+<main class="container my-5">
+  <h2 class="text-center mb-4">Our Dedicated Faculty Members</h2>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
 
-      <!-- Example Faculty Member -->
-      <div class="col-md-4">
-        <div class="faculty-card text-center">
-          <img src="../images/faculty1.jpg" alt="Principal" class="faculty-img mb-3">
-          <h5>Mr. A. Kumar</h5>
-          <p>Principal<br>M.A., B.Ed.</p>
-        </div>
+    <!-- Faculty Member -->
+    <div class="col">
+      <div class="faculty-card text-center">
+        <img src="../images/principal.webp" alt="Principal" class="faculty-img mb-3">
+        <h5>Mrs. Abhilasha Singh</h5>
+        <p>Principal<br>M.A., B.Ed.</p>
       </div>
-
-      <div class="col-md-4">
-        <div class="faculty-card text-center">
-          <img src="../images/faculty2.jpg" alt="Science Teacher" class="faculty-img mb-3">
-          <h5>Ms. Priya Sharma</h5>
-          <p>Science Teacher<br>M.Sc., B.Ed.</p>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="faculty-card text-center">
-          <img src="../images/faculty3.jpg" alt="Math Teacher" class="faculty-img mb-3">
-          <h5>Mr. R. Singh</h5>
-          <p>Mathematics Teacher<br>M.Sc., B.Ed.</p>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="faculty-card text-center">
-          <img src="../images/faculty4.jpg" alt="English Teacher" class="faculty-img mb-3">
-          <h5>Ms. Anjali Verma</h5>
-          <p>English Teacher<br>M.A., B.Ed.</p>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="faculty-card text-center">
-          <img src="../images/faculty5.jpg" alt="Computer Teacher" class="faculty-img mb-3">
-          <h5>Mr. Arya Singh</h5>
-          <p>Computer Science Teacher<br>MCA, O-Level</p>
-        </div>
-      </div>
-
     </div>
-  </main>
+
+    <div class="col">
+      <div class="faculty-card text-center">
+        <img src="../images/vpsir.webp" alt="Science Teacher" class="faculty-img mb-3">
+        <h5>Mr. Ajay Kr. Pandey</h5>
+        <p>Vice-Principal<br>M.Sc., B.Ed.</p>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="faculty-card text-center">
+        <img src="../images/arya.webp" alt="Math Teacher" class="faculty-img mb-3">
+        <h5>Mr. Arya Singh</h5>
+        <p>Computer Sci. Teacher<br>MCA, O level</p>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="faculty-card text-center">
+        <img src="../images/faculty4.jpg" alt="English Teacher" class="faculty-img mb-3">
+        <h5>Mr. R.P. Singh</h5>
+        <p>Maths Teacher<br>M.A., B.Ed.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
 
   <footer style="background: linear-gradient(to right, #d3d3d3, #595d5e); color: #000; padding: 30px 20px 2px;">
   <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto; gap: 15px;">
@@ -166,19 +166,18 @@
     <div style="flex: 1; min-width: 200px;">
       <h3>Quick Links</h3>
       <ul style="list-style: none; padding: 0;">
-        <li><a href="#" style="color: inherit; text-decoration: none;">Home</a></li>
-        <li><a href="#" style="color: inherit; text-decoration: none;">About Us</a></li>
-        <li><a href="#" style="color: inherit; text-decoration: none;">Academics</a></li>
-        <li><a href="#" style="color: inherit; text-decoration: none;">Admissions</a></li>
-        <li><a href="#" style="color: inherit; text-decoration: none;">Contact</a></li>
+        <li><a href="/index.html" style="color: inherit; text-decoration: none;">Home</a></li>
+        <li><a href="/about/about.html" style="color: inherit; text-decoration: none;">About Us</a></li>
+        <li><a href="/academics/academics.html" style="color: inherit; text-decoration: none;">Academics</a></li>
+        <li><a href="/admission/admission.html" style="color: inherit; text-decoration: none;">Admissions</a></li>
       </ul>
     </div>
 
     <!-- Contact Info -->
     <div style="flex: 1; min-width: 400px;">
       <h3>Contact</h3>
-      <a href="mailto:info@ambitionschool.edu.in" style="text-decoration: none;color:black;">Email: info@ambitionschool.edu.in</a> <br>
-      <a href="tel:98765 43210" style="text-decoration: none;color:black;">Phone: +91 98765 43210</a>
+      <a href="mailto:70211@cbseshiksha.in" style="text-decoration: none;color:black;">Email: 70211@cbseshiksha.in</a> <br>
+      <a href="tel:7783973928" style="text-decoration: none;color:black;">Phone: +91 7783973928</a>
       <p>Office Hours: 7:00 AM - 2:00 PM</p>
       <p><strong>Address:</strong>Ambition Convent School, Ujiar, Ballia<br>
         Near Buxar-Ballia Road, Uttar Pradesh - 277001</p>
