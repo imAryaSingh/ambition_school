@@ -1,6 +1,12 @@
 body {
   scrollbar-width: none;     /* Firefox */
   -ms-overflow-style: none;  /* IE 10+ */
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f9;
+  color: #333;
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
